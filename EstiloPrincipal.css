@@ -1,0 +1,107 @@
+.container { /*La parte dentro de la parte café */
+    /*margin: 2em; */
+    border-style: double;
+    background-color: #F9F3DF;
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+.container p, header, .subtitulo2, h1, h2, h3, h4, h5, h6, nav { /*Afecta la letra dentro de los headers, p y subtítulos*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.content { /*Lo usé para dar el margen dentro de la hoja de color claro*/
+    padding: 2em;
+}
+nav { /*El menú de navegación */
+    background: #D7E9F7;
+    left: 0;
+    position: fixed;
+	z-index:1000;
+	top:0;
+	width: 100%;
+    height: 2em;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    
+}
+nav ul{ /*Las listas no ordenadas dentro del div menu */
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+nav li { /*Los elementos dentro del div menu */
+    
+    float: left;
+    width: 16.6%;
+    height: 100%;
+     
+}
+nav li a { /*Los enlaces dentro de los elementos de las listas del div menu */
+    display: block;
+	/*padding: 0.7ex;*/
+	color:black;
+	text-decoration: none;
+    padding-top: 1ex;
+}
+nav li a:hover { /*Los mismo elementos de arriba pero afectados cuando el usuario coloca el mouse sobre ellos */
+    background-color: #333333;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+#inicio { /* El main específico del menú de inicio en el que coloqué el aside */
+    width: 75%;
+}
+main p { /*Justifica el texto dentro del main de cada una de las entradas */
+    text-align: justify;    
+}
+main p.epigrafe {
+    text-align: right;
+}
+main .nota-al-pie {
+    font-size: small;
+}
+main p.cita-larga { /*Los párrafos que son citas largas dentro de las entradas para darles un margen izquierdo */
+    margin-left: 3em;
+}
+main p.centrado {
+    text-align: center;
+}
+aside {
+    width: 20%;
+    float: right;
+    /*position: inherit;*/
+    text-align: justify;
+}
+body { /*Da el color café del fondo */
+    background-color: #F4D19B;
+    overflow: scroll;
+    
+}
+article { /*Los pequeños cuadros dentro del index que muestran los artíulos de forma resumida */
+    display: inline-block;
+    margin: 1ex;
+}
+article img { /*Para poner imágenes dentro de los artículos. AÚN NO PONGO NINGUNA */
+    height:auto;
+    width: 15em;
+    float: left;
+    margin: 2%;
+}
+article .container { /*Para que los artículos dentro de los artículos muestren un borde */
+    border-style: groove;
+}
+#referencias li { /*Similar a las citas largas pero para aplicarse a las referencias de cada entrada */
+    text-align: justify;
+    list-style: none;
+    text-indent: -5ex;
+}
+.listas { /*Para el enlistamiento de las entradas dentro de las páginas (Biografías, Ensayos,...) */
+    text-align: justify;
+    list-style: none;
+}

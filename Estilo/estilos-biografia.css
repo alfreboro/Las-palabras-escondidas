@@ -1,0 +1,13 @@
+.imagen-grande > img {
+    width: 30em;
+    height: auto;
+    padding: 1ex;
+    display:block; /*Estas dos propiedades sirven para centrar la imagen */
+    margin: auto;
+}
+ul li {
+    list-style: none;
+}
+#referencias li {
+    text-align: justify;
+}
